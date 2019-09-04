@@ -4,7 +4,7 @@
 
         </TheAnswer>
         <TheCover>
-
+            8
         </TheCover>
 
     </div>
@@ -14,6 +14,7 @@
   import TheAnswer from '@/components/TheAnswer';
   import TheCover from '@/components/TheCover';
   export default {
+    name: 'TheBall',
     components:{
       TheAnswer,
       TheCover
