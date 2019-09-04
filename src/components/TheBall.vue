@@ -1,7 +1,6 @@
 <template>
     <div class="ball black" v-on:click="shake()">
         <TheAnswer v-if="shook">
-            answer
         </TheAnswer>
         <TheCover v-if="!shook">
             8
@@ -13,7 +12,6 @@
 <script>
   import TheAnswer from '@/components/TheAnswer';
   import TheCover from '@/components/TheCover';
-  import responses from '@/assets/responses.json';
   export default {
     name: 'TheBall',
     components:{
@@ -22,8 +20,7 @@
     },
     data: function() {
       return {
-        shook: false,
-        responses,
+        shook: false
       }
     },
     methods: {
